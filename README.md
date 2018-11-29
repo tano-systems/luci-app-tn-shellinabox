@@ -12,3 +12,9 @@ in [meta-tano-openwrt](https://github.com/tano-systems/meta-tano-openwrt.git) Op
 ## Supported languages
 - English
 - Russian
+
+## Screenshots
+
+### Status page
+![Terminal page](screenshots/terminal.png?raw=true "Terminal page")
+
