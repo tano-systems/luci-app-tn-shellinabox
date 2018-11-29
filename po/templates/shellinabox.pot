@@ -1,0 +1,86 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: luasrc/view/shellinabox/terminal.htm:66
+msgid "Can\\\\'t load non-SSL terminal into page loaded over HTTPS"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:37
+msgid "Enable SSL"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:53
+msgid "HTTPS certificate (PEM&nbsp;format)"
+msgstr ""
+
+#: luasrc/view/shellinabox/terminal.htm:36
+msgid ""
+"If terminal is not displayed and you use self-signed SSL certificate may you "
+"need to open terminal in a separate browser window using the appropriate "
+"button above and approve the certificate manually. After approving the "
+"certificate you need to reload this page."
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:44
+msgid "Must have certificate when using SSL"
+msgstr ""
+
+#: luasrc/view/shellinabox/terminal.htm:31
+msgid "Open terminal in a separate window"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:16
+msgid "Port"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:17
+msgid "Port to listen (default: 4200)"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:60
+msgid "Remove SSL certificate"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:54
+msgid "SSL certificate file path"
+msgstr ""
+
+#: luasrc/controller/shellinabox.lua:19
+msgid "Setup"
+msgstr ""
+
+#: luasrc/view/shellinabox/terminal.htm:51
+msgid "Start terminal server"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:26
+msgid "Suppress all audio output"
+msgstr ""
+
+#: luasrc/controller/shellinabox.lua:17 luasrc/controller/shellinabox.lua:18
+#: luasrc/view/shellinabox/terminal.htm:23
+msgid "Terminal"
+msgstr ""
+
+#: luasrc/view/shellinabox/terminal.htm:49
+msgid "Terminal server is not running"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:9
+msgid "Terminal server settings"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:61
+msgid "Terminal server will generate a new self-signed certificate"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:7
+msgid "Terminal settings"
+msgstr ""
+
+#: luasrc/view/shellinabox/terminal.htm:67
+msgid ""
+"You can enable SSL in terminal settings page or use HTTP connection instead "
+"of HTTPS. Also you can open terminal in a separate window using the "
+"appropriate button below."
+msgstr ""

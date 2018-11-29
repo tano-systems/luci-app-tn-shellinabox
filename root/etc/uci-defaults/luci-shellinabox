@@ -1,0 +1,11 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@ttyd[-1]
+	add ucitrack shellinabox
+	set ucitrack.@shellinabox[-1].init=shellinabox
+	commit ucitrack
+EOF
+
+rm -f /tmp/luci-indexcache
+exit 0
