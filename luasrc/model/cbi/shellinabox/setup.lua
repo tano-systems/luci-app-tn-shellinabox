@@ -6,13 +6,16 @@ local m, s, o
 
 m = Map("shellinabox", translate("Terminal settings"))
 
-s = m:section(TypedSection, "server", translate("Terminal server settings"))
+s = m:section(TypedSection, "server")
 s.anonymous = true
 s.addremove = false
 
+s:tab("general", translate("General Settings"))
+s:tab("ssl", translate("SSL Settings"))
+
 ---------------------------
 
-o = s:option(Value, "port",
+o = s:taboption("general", Value, "port",
 	translate("Port"),
 	translate("Port to listen (default: 4200)"))
 
@@ -21,8 +24,7 @@ o.datatype = "port"
 o.rmempty = true
 o.placeholder = 4200
 
--- Enable SSL
-o = s:option(Flag, "no_beep",
+o = s:taboption("general", Flag, "no_beep",
 	translate("Suppress all audio output"))
 
 o.default = true
@@ -33,7 +35,7 @@ local ssl = nil
 local ssl_cert = nil
 
 -- Enable SSL
-ssl = s:option(Flag, "ssl",
+ssl = s:taboption("ssl", Flag, "ssl",
 	translate("Enable SSL"))
 
 function ssl.validate(self, value, section)
@@ -49,14 +51,14 @@ function ssl.validate(self, value, section)
 end
 
 -- SSL certificate file path
-ssl_cert = s:option(FileUpload, "ssl_cert",
+ssl_cert = s:taboption("ssl", FileUpload, "ssl_cert",
 	translate("HTTPS certificate (PEM&nbsp;format)"),
 	translate("SSL certificate file path"))
 	
 ssl_cert:depends("ssl", 1)
 ssl_cert.default = '/etc/shellinabox/ssl/certificate.pem'
 
-o = s:option(Button, "remove_ssl_cert",
+o = s:taboption("ssl", Button, "remove_ssl_cert",
 	translate("Remove SSL certificate"),
 	translate("Terminal server will generate a new self-signed certificate"))
 

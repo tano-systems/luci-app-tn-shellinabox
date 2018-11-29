@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-11-29 17:39+0300\n"
-"PO-Revision-Date: 2018-11-29 17:39+0300\n"
+"PO-Revision-Date: 2018-11-29 18:02+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,15 @@ msgstr ""
 "Невозможно загрузить не SSL терминал на страницу, загруженную по протоколу "
 "HTTPS"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:37
+#: luasrc/model/cbi/shellinabox/setup.lua:39
 msgid "Enable SSL"
 msgstr "Включить SSL"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:53
+#: luasrc/model/cbi/shellinabox/setup.lua:13
+msgid "General Settings"
+msgstr "Основные настройки"
+
+#: luasrc/model/cbi/shellinabox/setup.lua:55
 msgid "HTTPS certificate (PEM&nbsp;format)"
 msgstr "Сертификат HTTPS (формат&nbsp;PEM)"
 
@@ -38,7 +42,7 @@ msgstr ""
 "исключения безопасности браузера вручную. После добавления сертификата "
 "необходимо перезагрузить эту страницу."
 
-#: luasrc/model/cbi/shellinabox/setup.lua:44
+#: luasrc/model/cbi/shellinabox/setup.lua:46
 msgid "Must have certificate when using SSL"
 msgstr "Для использования SSL необходимо установить HTTPS сертификат"
 
@@ -46,23 +50,27 @@ msgstr "Для использования SSL необходимо устано�
 msgid "Open terminal in a separate window"
 msgstr "Открыть терминал в отдельном окне"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:16
+#: luasrc/model/cbi/shellinabox/setup.lua:19
 msgid "Port"
 msgstr "Порт"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:17
+#: luasrc/model/cbi/shellinabox/setup.lua:20
 msgid "Port to listen (default: 4200)"
 msgstr "Порт для входящих соединений (по умолчанию: 4200)"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:60
+#: luasrc/model/cbi/shellinabox/setup.lua:62
 msgid "Remove SSL certificate"
 msgstr "Удалить SSL сертификат"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:54
+#: luasrc/model/cbi/shellinabox/setup.lua:14
+msgid "SSL Settings"
+msgstr "Настройки SSL"
+
+#: luasrc/model/cbi/shellinabox/setup.lua:56
 msgid "SSL certificate file path"
 msgstr "Путь к файлу SSL сертификата"
 
-#: luasrc/controller/shellinabox.lua:19
+#: luasrc/controller/shellinabox.lua:18
 msgid "Setup"
 msgstr "Настройка"
 
@@ -70,11 +78,11 @@ msgstr "Настройка"
 msgid "Start terminal server"
 msgstr "Запустить службу терминала"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:26
+#: luasrc/model/cbi/shellinabox/setup.lua:28
 msgid "Suppress all audio output"
 msgstr "Отключить вывод звуковых сигналов"
 
-#: luasrc/controller/shellinabox.lua:17 luasrc/controller/shellinabox.lua:18
+#: luasrc/controller/shellinabox.lua:16 luasrc/controller/shellinabox.lua:17
 #: luasrc/view/shellinabox/terminal.htm:23
 msgid "Terminal"
 msgstr "Терминал"
@@ -83,11 +91,7 @@ msgstr "Терминал"
 msgid "Terminal server is not running"
 msgstr "Служба терминала не запущена"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:9
-msgid "Terminal server settings"
-msgstr "Настройки службы терминала"
-
-#: luasrc/model/cbi/shellinabox/setup.lua:61
+#: luasrc/model/cbi/shellinabox/setup.lua:63
 msgid "Terminal server will generate a new self-signed certificate"
 msgstr ""
 "Служба терминала автоматически сгенерирует новый самоподписанный сертификат."
@@ -105,3 +109,6 @@ msgstr ""
 "Вы можете включить поддержку SSL на странице настроек терминала или "
 "использовать HTTP подключение вместо HTTPS. Также вы можете открыть терминал "
 "в отдельном окне браузера, используя для этого соответствующую кнопку ниже."
+
+#~ msgid "Terminal server settings"
+#~ msgstr "Настройки службы терминала"

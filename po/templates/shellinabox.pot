@@ -5,11 +5,15 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "Can\\\\'t load non-SSL terminal into page loaded over HTTPS"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:37
+#: luasrc/model/cbi/shellinabox/setup.lua:39
 msgid "Enable SSL"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:53
+#: luasrc/model/cbi/shellinabox/setup.lua:13
+msgid "General Settings"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:55
 msgid "HTTPS certificate (PEM&nbsp;format)"
 msgstr ""
 
@@ -21,7 +25,7 @@ msgid ""
 "certificate you need to reload this page."
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:44
+#: luasrc/model/cbi/shellinabox/setup.lua:46
 msgid "Must have certificate when using SSL"
 msgstr ""
 
@@ -29,23 +33,27 @@ msgstr ""
 msgid "Open terminal in a separate window"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:16
+#: luasrc/model/cbi/shellinabox/setup.lua:19
 msgid "Port"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:17
+#: luasrc/model/cbi/shellinabox/setup.lua:20
 msgid "Port to listen (default: 4200)"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:60
+#: luasrc/model/cbi/shellinabox/setup.lua:62
 msgid "Remove SSL certificate"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:54
+#: luasrc/model/cbi/shellinabox/setup.lua:14
+msgid "SSL Settings"
+msgstr ""
+
+#: luasrc/model/cbi/shellinabox/setup.lua:56
 msgid "SSL certificate file path"
 msgstr ""
 
-#: luasrc/controller/shellinabox.lua:19
+#: luasrc/controller/shellinabox.lua:18
 msgid "Setup"
 msgstr ""
 
@@ -53,11 +61,11 @@ msgstr ""
 msgid "Start terminal server"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:26
+#: luasrc/model/cbi/shellinabox/setup.lua:28
 msgid "Suppress all audio output"
 msgstr ""
 
-#: luasrc/controller/shellinabox.lua:17 luasrc/controller/shellinabox.lua:18
+#: luasrc/controller/shellinabox.lua:16 luasrc/controller/shellinabox.lua:17
 #: luasrc/view/shellinabox/terminal.htm:23
 msgid "Terminal"
 msgstr ""
@@ -66,11 +74,7 @@ msgstr ""
 msgid "Terminal server is not running"
 msgstr ""
 
-#: luasrc/model/cbi/shellinabox/setup.lua:9
-msgid "Terminal server settings"
-msgstr ""
-
-#: luasrc/model/cbi/shellinabox/setup.lua:61
+#: luasrc/model/cbi/shellinabox/setup.lua:63
 msgid "Terminal server will generate a new self-signed certificate"
 msgstr ""
 
