@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-11-29 17:39+0300\n"
-"PO-Revision-Date: 2018-11-29 18:02+0300\n"
+"PO-Revision-Date: 2019-06-03 15:33+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Enable SSL"
 msgstr "Включить SSL"
 
 #: luasrc/model/cbi/shellinabox/setup.lua:13
-msgid "General Settings"
+msgid "Basic Settings"
 msgstr "Основные настройки"
 
 #: luasrc/model/cbi/shellinabox/setup.lua:55

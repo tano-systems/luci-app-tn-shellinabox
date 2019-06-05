@@ -10,12 +10,12 @@ s = m:section(TypedSection, "server")
 s.anonymous = true
 s.addremove = false
 
-s:tab("general", translate("General Settings"))
+s:tab("basic", translate("Basic Settings"))
 s:tab("ssl", translate("SSL Settings"))
 
 ---------------------------
 
-o = s:taboption("general", Value, "port",
+o = s:taboption("basic", Value, "port",
 	translate("Port"),
 	translate("Port to listen (default: 4200)"))
 
@@ -24,7 +24,7 @@ o.datatype = "port"
 o.rmempty = true
 o.placeholder = 4200
 
-o = s:taboption("general", Flag, "no_beep",
+o = s:taboption("basic", Flag, "no_beep",
 	translate("Suppress all audio output"))
 
 o.default = true

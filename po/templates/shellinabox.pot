@@ -10,7 +10,7 @@ msgid "Enable SSL"
 msgstr ""
 
 #: luasrc/model/cbi/shellinabox/setup.lua:13
-msgid "General Settings"
+msgid "Basic Settings"
 msgstr ""
 
 #: luasrc/model/cbi/shellinabox/setup.lua:55
