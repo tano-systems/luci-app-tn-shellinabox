@@ -22,14 +22,19 @@ function index()
 end
 
 function view_terminal()
-	local is_running = luci.sys.exec("/etc/init.d/shellinabox status")
+	local code = luci.sys.call("/etc/init.d/shellinabox status >/dev/null")
+	local is_running = 0
+
+	if code == 0 then
+		is_running = 1
+	end
 
 	local uci  = require "luci.model.uci".cursor()
 	local ssl  = uci:get("shellinabox", "server", "ssl") or "0"
 	local port = uci:get("shellinabox", "server", "port") or "4200"
 
 	tmpl.render("shellinabox/terminal", {
-		is_running = tonumber(is_running),
+		is_running = is_running,
 		ssl = tonumber(ssl),
 		port = tonumber(port)
 	})
