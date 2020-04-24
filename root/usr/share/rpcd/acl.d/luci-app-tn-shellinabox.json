@@ -1,11 +1,29 @@
 {
 	"luci-app-tn-shellinabox": {
-		"description": "Grant UCI access for luci-app-tn-shellinabox",
+		"description": "Grant access to web terminal",
+		"read": {
+			"uci": [ "shellinabox" ],
+			"file": {
+				"/etc/shellinabox/ssl/*": [ "list", "stat" ]
+			}
+		}
+	},
+
+	"luci-app-tn-shellinabox-config": {
+		"description": "Grant access to web terminal configuration",
 		"read": {
 			"uci": [ "shellinabox" ]
 		},
 		"write": {
-			"uci": [ "shellinabox" ]
+			"uci": [ "shellinabox" ],
+			"file": {
+				"/etc/shellinabox/ssl/*": [ "write", "remove" ]
+			},
+			"ubus": {
+				"luci": [
+					"setInitAction"
+				]
+			}
 		}
 	}
 }
