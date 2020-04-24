@@ -1,114 +1,120 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: luci-app-tn-shellinabox\n"
 "POT-Creation-Date: 2018-11-29 17:39+0300\n"
-"PO-Revision-Date: 2019-06-03 15:33+0300\n"
+"PO-Revision-Date: 2020-04-24 16:24+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
-"Language-Team: \n"
+"Language-Team: Tano Systems LLC\n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "X-Generator: Poedit 2.2\n"
 
-#: luasrc/view/shellinabox/terminal.htm:66
-msgid "Can\\\\'t load non-SSL terminal into page loaded over HTTPS"
+#: htdocs/luci-static/resources/view/shellinabox/config.js:34
+msgid "Basic Settings"
+msgstr "Основные настройки"
+
+#: htdocs/luci-static/resources/view/shellinabox/terminal.js:64
+msgid "Can't load non-SSL terminal into page loaded over HTTPS"
 msgstr ""
 "Невозможно загрузить не SSL терминал на страницу, загруженную по протоколу "
 "HTTPS"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:39
+#: htdocs/luci-static/resources/view/shellinabox/config.js:62
 msgid "Enable SSL"
 msgstr "Включить SSL"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:13
-msgid "Basic Settings"
-msgstr "Основные настройки"
+#: htdocs/luci-static/resources/view/shellinabox/config.js:95
+msgid "Failed to regenerate SSL certificate:"
+msgstr "Не удалось перегенерировать SSL-сертификат:"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:55
+#: htdocs/luci-static/resources/view/shellinabox/config.js:67
+msgid "File file must contain private key and certificate parts."
+msgstr "Файл должен включать в себя части с закрытым ключом и сертификатом."
+
+#: root/usr/share/rpcd/acl.d/luci-app-tn-shellinabox.json:3
+msgid "Grant access to web terminal"
+msgstr "Предоставить доступ к веб-терминалу"
+
+#: root/usr/share/rpcd/acl.d/luci-app-tn-shellinabox.json:13
+msgid "Grant access to web terminal configuration"
+msgstr "Предоставить доступ к конфигурации веб-терминала"
+
+#: htdocs/luci-static/resources/view/shellinabox/config.js:66
 msgid "HTTPS certificate (PEM&nbsp;format)"
 msgstr "Сертификат HTTPS (формат&nbsp;PEM)"
 
-#: luasrc/view/shellinabox/terminal.htm:36
+#: htdocs/luci-static/resources/view/shellinabox/terminal.js:103
 msgid ""
-"If terminal is not displayed and you use self-signed SSL certificate may you "
-"need to open terminal in a separate browser window using the appropriate "
-"button above and approve the certificate manually. After approving the "
-"certificate you need to reload this page."
+"If terminal is not displayed and you are using self-signed SSL certificate "
+"may you need to open terminal in a separate browser window using the "
+"appropriate button above and approve the certificate manually. After "
+"approving the certificate you need to reload this page or use terminal in "
+"opened window."
 msgstr ""
-"Если терминал не отображается, и при этом используется самоподписанный SSL "
-"сертификат, возможно потребуется открыть терминал в отдельном окне браузера, "
-"используя для этого соответствующую кнопку выше, и добавить сертификат в "
-"исключения безопасности браузера вручную. После добавления сертификата "
-"необходимо перезагрузить эту страницу."
+"Если терминал не отображается и используется самоподписанный SSL-сертификат, "
+"может потребоваться открыть терминал в отдельном окне браузера с помощью "
+"соответствующей кнопки выше и подтвердить сертификат вручную. После "
+"подтверждения сертификата необходимо перезагрузить данную страницу или "
+"использовать терминал в открывшемся окне."
 
-#: luasrc/model/cbi/shellinabox/setup.lua:46
-msgid "Must have certificate when using SSL"
-msgstr "Для использования SSL необходимо установить HTTPS сертификат"
-
-#: luasrc/view/shellinabox/terminal.htm:31
+#: htdocs/luci-static/resources/view/shellinabox/terminal.js:86
 msgid "Open terminal in a separate window"
 msgstr "Открыть терминал в отдельном окне"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:19
+#: htdocs/luci-static/resources/view/shellinabox/config.js:40
 msgid "Port"
 msgstr "Порт"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:20
+#: htdocs/luci-static/resources/view/shellinabox/config.js:41
 msgid "Port to listen (default: 4200)"
 msgstr "Порт для входящих соединений (по умолчанию: 4200)"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:62
-msgid "Remove SSL certificate"
-msgstr "Удалить SSL сертификат"
+#: htdocs/luci-static/resources/view/shellinabox/config.js:74
+msgid "Regenerate SSL certificate"
+msgstr "Перегенерировать SSL-сертификат"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:14
+#: htdocs/luci-static/resources/view/shellinabox/config.js:35
 msgid "SSL Settings"
 msgstr "Настройки SSL"
 
-#: luasrc/model/cbi/shellinabox/setup.lua:56
-msgid "SSL certificate file path"
-msgstr "Путь к файлу SSL сертификата"
+#: root/usr/share/luci/menu.d/luci-app-tn-shellinabox.json:31
+msgid "Settings"
+msgstr "Настройки"
 
-#: luasrc/controller/shellinabox.lua:18
-msgid "Setup"
-msgstr "Настройка"
-
-#: luasrc/view/shellinabox/terminal.htm:51
-msgid "Start terminal server"
-msgstr "Запустить службу терминала"
-
-#: luasrc/model/cbi/shellinabox/setup.lua:28
+#: htdocs/luci-static/resources/view/shellinabox/config.js:49
 msgid "Suppress all audio output"
 msgstr "Отключить вывод звуковых сигналов"
 
-#: luasrc/controller/shellinabox.lua:16 luasrc/controller/shellinabox.lua:17
-#: luasrc/view/shellinabox/terminal.htm:23
+#: root/usr/share/luci/menu.d/luci-app-tn-shellinabox.json:3
+#: root/usr/share/luci/menu.d/luci-app-tn-shellinabox.json:16
 msgid "Terminal"
 msgstr "Терминал"
 
-#: luasrc/view/shellinabox/terminal.htm:49
-msgid "Terminal server is not running"
-msgstr "Служба терминала не запущена"
-
-#: luasrc/model/cbi/shellinabox/setup.lua:63
-msgid "Terminal server will generate a new self-signed certificate"
-msgstr ""
-"Служба терминала автоматически сгенерирует новый самоподписанный сертификат."
-
-#: luasrc/model/cbi/shellinabox/setup.lua:7
-msgid "Terminal settings"
-msgstr "Настройка терминала"
-
-#: luasrc/view/shellinabox/terminal.htm:67
+#: htdocs/luci-static/resources/view/shellinabox/config.js:75
 msgid ""
-"You can enable SSL in terminal settings page or use HTTP connection instead "
-"of HTTPS. Also you can open terminal in a separate window using the "
-"appropriate button below."
+"Terminal server will delete current certificate file and generate a new self-"
+"signed certificate"
 msgstr ""
-"Вы можете включить поддержку SSL на странице настроек терминала или "
-"использовать HTTP подключение вместо HTTPS. Также вы можете открыть терминал "
-"в отдельном окне браузера, используя для этого соответствующую кнопку ниже."
+"Служба терминала удалить существуюий сертификат и автоматически сгенерирует "
+"новый самоподписанный сертификат"
 
-#~ msgid "Terminal server settings"
-#~ msgstr "Настройки службы терминала"
+#: htdocs/luci-static/resources/view/shellinabox/terminal.js:54
+msgid "Web Terminal"
+msgstr "Веб-терминал"
+
+#: htdocs/luci-static/resources/view/shellinabox/config.js:28
+msgid "Web Terminal Settings"
+msgstr "Настройки веб-терминала"
+
+#: htdocs/luci-static/resources/view/shellinabox/terminal.js:66
+msgid ""
+"You can enable SSL in <a href=\"%s\">terminal settings</a> page or use HTTP "
+"connection instead of HTTPS. Also you can open terminal in a separate window "
+"using the appropriate button below."
+msgstr ""
+"Вы можете включить поддержку SSL на странице <a href=\"%s\">настроек "
+"терминала</a> или использовать HTTP подключение вместо HTTPS. Также вы "
+"можете открыть терминал в отдельном окне браузера, используя для этого "
+"соответствующую кнопку ниже."
